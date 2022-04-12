@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <!-- Calculator -->
+        <item
+            android:id="@+id/calculator"
+            android:icon="@drawable/ic_calculator"
+            android:title="Calculator" />
+
+        <!-- Sound -->
+        <item
+            android:id="@+id/sound"
+            android:icon="@drawable/ic_sound"
+            android:title="Sound" />
+
+        <!-- Website -->
+        <item
+            android:id="@+id/website"
+            android:icon="@drawable/ic_website"
+            android:title="Website" />
+
+        <!-- Maps -->
+        <item
+            android:id="@+id/maps"
+            android:icon="@drawable/ic_maps"
+            android:title="Maps" />
+
+        <!-- Wonders of World -->
+        <item
+            android:id="@+id/wondersWorld"
+            android:icon="@drawable/ic_pyramid"
+            android:title="Wonders of World" />
+
+        <!-- Pokemon -->
+        <item
+            android:id="@+id/pokemon"
+            android:icon="@drawable/ic_pokemon"
+            android:title="Pokemon" />
+
+    </group>
+
+</menu>

@@ -1,4 +1,4 @@
-package com.example.tarea_cristianmonzonguzman;
+package com.example.tarea_cristianmonzonguzman.Pokemon;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.tarea_cristianmonzonguzman.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CalculatorFragment#newInstance} factory method to
+ * Use the {@link PokemonFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CalculatorFragment extends Fragment {
+public class PokemonFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class CalculatorFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CalculatorFragment() {
+    public PokemonFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class CalculatorFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CalculatorFragment.
+     * @return A new instance of fragment PokemonFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CalculatorFragment newInstance(String param1, String param2) {
-        CalculatorFragment fragment = new CalculatorFragment();
+    public static PokemonFragment newInstance(String param1, String param2) {
+        PokemonFragment fragment = new PokemonFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class CalculatorFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_calculator, container, false);
+        return inflater.inflate(R.layout.fragment_pokemon, container, false);
     }
 }

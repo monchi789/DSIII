@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navi"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.tarea_cristianmonzonguzman.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/websiteFragment"
+        android:name="com.example.tarea_cristianmonzonguzman.Website.WebsiteFragment"
+        android:label="fragment_website"
+        tools:layout="@layout/fragment_website" />
+    <fragment
+        android:id="@+id/wondersFragment"
+        android:name="com.example.tarea_cristianmonzonguzman.WondersWorld.WondersFragment"
+        android:label="fragment_wonders"
+        tools:layout="@layout/fragment_wonders" />
+    <fragment
+        android:id="@+id/appsFragment"
+        android:name="com.example.tarea_cristianmonzonguzman.Apps.AppsFragment"
+        android:label="fragment_apps"
+        tools:layout="@layout/fragment_apps" />
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.example.tarea_cristianmonzonguzman.Calculator.CalculatorFragment"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" />
+    <fragment
+        android:id="@+id/pokemonFragment"
+        android:name="com.example.tarea_cristianmonzonguzman.Pokemon.PokemonFragment"
+        android:label="fragment_pokemon"
+        tools:layout="@layout/fragment_pokemon" />
+    <fragment
+        android:id="@+id/soundFragment"
+        android:name="com.example.tarea_cristianmonzonguzman.Sound.SoundFragment"
+        android:label="fragment_sound"
+        tools:layout="@layout/fragment_sound" />
+</navigation>

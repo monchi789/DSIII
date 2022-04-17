@@ -15,6 +15,7 @@ import android.view.MenuItem;
 
 import com.example.tarea_cristianmonzonguzman.Calculator.CalculatorFragment;
 import com.example.tarea_cristianmonzonguzman.Pokemon.PokemonFragment;
+import com.example.tarea_cristianmonzonguzman.Sound.SoundFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -53,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.sound:
+                        fragment = new SoundFragment();
+                        LoadFragment(fragment);
                         break;
 
                     case R.id.website:

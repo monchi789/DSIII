@@ -8,6 +8,86 @@
 
 
     <ImageButton
+        android:id="@+id/btnWalk"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/walk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
+
+    <ImageButton
+        android:id="@+id/btnPum"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/pum_pum_pum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
+
+    <ImageButton
+        android:id="@+id/btnSweater"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/sweater_weather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <ImageButton
+        android:id="@+id/btnImagination"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/imagination"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <ImageButton
+        android:id="@+id/btnBones"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/bones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
         android:id="@+id/btnRaro"
         android:layout_width="150dp"
         android:layout_height="150dp"

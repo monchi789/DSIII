@@ -1,5 +1,6 @@
 package com.example.tarea_cristianmonzonguzman.Sound;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.example.tarea_cristianmonzonguzman.R;
 
@@ -16,6 +18,14 @@ import com.example.tarea_cristianmonzonguzman.R;
  * create an instance of this fragment.
  */
 public class SoundFragment extends Fragment {
+
+    // Define the Variables
+    ImageButton btnRaro;
+    ImageButton btnBones;
+    ImageButton btnImagination;
+    ImageButton btnSweater;
+    ImageButton btnPum;
+    ImageButton btnWalk;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -60,7 +70,73 @@ public class SoundFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_sound, container, false);
+
+        // Find the Views
+        btnRaro = view.findViewById(R.id.btnRaro);
+        btnBones = view.findViewById(R.id.btnBones);
+        btnImagination = view.findViewById(R.id.btnImagination);
+        btnSweater = view.findViewById(R.id.btnSweater);
+        btnPum = view.findViewById(R.id.btnPum);
+        btnWalk = view.findViewById(R.id.btnWalk);
+
+        // Set the OnClickListener
+        // Raro
+        btnRaro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.hoy_estoy_raro);
+                mediaPlayer.start();
+            }
+        });
+
+        // Bones
+        btnBones.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.bones);
+                mediaPlayer.start();
+            }
+        });
+
+        // Imagination
+        btnImagination.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.imagination);
+                mediaPlayer.start();
+            }
+        });
+
+        // Sweater
+        btnSweater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.sweater_weather);
+                mediaPlayer.start();
+            }
+        });
+
+        // Pum
+        btnPum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.pum_pum_pum);
+                mediaPlayer.start();
+            }
+        });
+
+        // Walk
+        btnWalk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.walk);
+                mediaPlayer.start();
+            }
+        });
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sound, container, false);
+        return view;
     }
 }

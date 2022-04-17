@@ -13,9 +13,11 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.tarea_cristianmonzonguzman.Apps.AppsFragment;
 import com.example.tarea_cristianmonzonguzman.Calculator.CalculatorFragment;
 import com.example.tarea_cristianmonzonguzman.Pokemon.PokemonFragment;
 import com.example.tarea_cristianmonzonguzman.Sound.SoundFragment;
+import com.example.tarea_cristianmonzonguzman.Website.WebsiteFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -59,9 +61,13 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.website:
+                        fragment = new WebsiteFragment();
+                        LoadFragment(fragment);
                         break;
 
-                    case R.id.maps:
+                    case R.id.apps:
+                        fragment = new AppsFragment();
+                        LoadFragment(fragment);
                         break;
 
                     case R.id.wondersWorld:

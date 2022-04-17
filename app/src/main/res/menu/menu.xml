@@ -22,9 +22,9 @@
 
         <!-- Maps -->
         <item
-            android:id="@+id/maps"
-            android:icon="@drawable/ic_maps"
-            android:title="Maps" />
+            android:id="@+id/apps"
+            android:icon="@drawable/ic_apps"
+            android:title="Apps" />
 
         <!-- Wonders of World -->
         <item

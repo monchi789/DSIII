@@ -1,14 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WondersWorld.WondersFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Machu Picchu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Machu Picchu"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/machu_picchu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="Descubierta en el año 1902 por Agustín Lizárraga y dada a conocer al mundo en 1911 por Hiram Bingham, la ciudad “perdida” de los Incas fue construida a mediados del siglo XV d. C por órdenes del Inca Pachacútec. Si bien este centro arqueológico no tiene nombre, Machu Picchu, la montaña donde se encuentra ubicada, significa en quechua “Montaña Vieja”. Según investigaciones, este lugar servía como un espacio de reposo para el Inca y estaba destinado a albergar un aproximado de 300 personas." />
+
+
+            <!-- Chichen Itza -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Chichen Itza"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/chichen_itza" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="En el idioma Maya, su nombre significa “Boca del Pozo de los Brujos del Agua” ya que, según la creencia de esa época, el cenote sagrado servía como entrada al inframundo.
+
+Inaugurada en el año 525 d.C., este “castillo”, como denominaron los conquistadores españoles a esta maravilla mundial, sirvió como templo para el dios Kukulkán y consiste en una pirámide con una serie de terrazas cuadradas con escaleras que suben desde cada uno de los cuatro lados la misma hasta la parte superior. Fue declarada Patrimonio de la Humanidad por la UNESCO en el año 1988" />
+
+            <!-- Coliseo de Roma -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Coliseo de Roma"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/coliseo_romano" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="Este anfiteatro, el cual es el tesoro que el Imperio Romano dejó como herencia a la Ciudad Eterna, es una de las 7 maravillas del mundo moderno debido a que es el más grande nunca antes construido en el mundo. Su nombre original fue Anfiteatro Flavio y aquí se organizaban las luchas de los gladiadores, entre otros espectáculos. Funcionó durante más de 500 años y fue construido para soportar a más de 50 mil espectadores. Hoy en día es un atractivo turístico que atrae cada año a más de 100 mil turistas a la ciudad de la luz." />
+
+            <!-- Rio de Janeiro -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cristo Redentor"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/cristo_redentor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="Otra de las 7 maravillas del mundo moderno es la gran estatua de Jesús de Nazaret con los brazos abiertos que se ve desde cualquier punto de la ciudad de Río de Janeiro en Brasil. Este monumento Art Decó de 30 metros de altura en lo más alto del cerro Corcovado fue inaugurado en 1931 y es el fruto del trabajo en conjunto del escultor polaco-francés Paul Landowski y del ingeniero brasileño Heitor da Silva Costa. Como dato curioso, la estatua fue construida en Francia y llegó a Brasil en cientos de partes solo para ser ensamblada desde la cabeza hasta los pies para poder ser levantada en el cerro." />
+
+            <!-- Muralla China -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="La gran Muralla China"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/muralla_china" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="Esta maravilla del mundo moderno, la cual es la construcción emblemática de todo China, sirvió como fortaleza a base de piedra, ladrillo, madera y tierra apisonada para proteger a este país asiático de las posibles invasiones de los mongoles por el norte. Originalmente llegó a medir más de 21 mil kilómetros cuando fue construida entre los siglos V a.c. y XVI d.c. (¡Más de 2000 años!) y millones de obreros perdieron la vida durante su construcción, lo que la convierte también en el mayor y más grande cementerio del mundo ya que estas personas fueron enterradas ahí. Existe una creencia que dicta que esta construcción puede ser divisada desde el espacio, pero fue desmentida por distintos astronautas." />
+
+            <!-- Taj Mahal -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Taj Mahal"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/taj_mahal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="Si hablamos de las 7 maravillas del mundo moderno, no podemos olvidarnos del apoteósico Taj Mahal. Posiblemente, este es el edificio más romántico del mundo, pues fue construido a mediados del siglo XVII por el emperador Shah Jahan como mausoleo para enterrar a su difunta esposa. Se dice que el emperador estaba tan enamorado de ella que ordenó construir el mausoleo más bello y grandioso en su honor. Mide 42 acres que incluyen una mezquita y una casa de huéspedes, además de los jardines. El nombre de este edificio hace referencia a Arjumand, su difunta esposa, quien era conocida como Mumtaz Mahal que en persa significa “Elegida del Palacio” o “Primera Dama del Palacio”; mientras que “Taj” significa “corona”. Por ende, el nombre del Taj Mahal significa “Corona de Mahal”." />
+
+            <!-- Ciudad de Piedra -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Petra"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ciudad_de_petra" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="Originalmente conocida como Raqmu, la ciudad de Piedra le valió un lugar entre las 7 maravillas del mundo moderno por su arquitectura excavada en la roca, así como también por su avanzado sistema de conductos de agua. La ciudad de Petra, construida muy posiblemente ya en el año 312 a.C como la capital de los nabateos árabes, era el lugar de paso de las caravanas que transportaban especias, incienso y productos de lujo entre Arabia, Siria, Egipto y el Sur del Mediterráneo. Sus altos muros, los cuales albergaban tanto agua potable como seguridad a los mercaderes, son un símbolo definitivo de Jordania. Fue declarada Patrimonio de la Humanidad por la UNESCO en 1985." />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

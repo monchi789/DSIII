@@ -18,6 +18,7 @@ import com.example.tarea_cristianmonzonguzman.Calculator.CalculatorFragment;
 import com.example.tarea_cristianmonzonguzman.Pokemon.PokemonFragment;
 import com.example.tarea_cristianmonzonguzman.Sound.SoundFragment;
 import com.example.tarea_cristianmonzonguzman.Website.WebsiteFragment;
+import com.example.tarea_cristianmonzonguzman.WondersWorld.WondersFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -71,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.wondersWorld:
+                        fragment = new WondersFragment();
+                        LoadFragment(fragment);
                         break;
 
                     case R.id.pokemon:
